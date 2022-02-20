@@ -1,20 +1,24 @@
 {
   "name": "advice-generator-app",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "src/pages/index.js",
   "license": "MIT",
   "dependencies": {
-    "@emotion/react": "^11.7.1",
+    "@emotion/react": "^11.8.1",
+    "axios": "^0.26.0",
     "emotion": "^11.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "start": "parcel src/pages/index.html",
+    "build": "parcel build src/pages/index.html"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
-    "@babel/preset-react": "^7.16.7"
+    "@babel/preset-react": "^7.16.7",
+    "babel-plugin-emotion": "^11.0.0",
+    "babel-plugin-jsx-pragmatic": "^1.0.2",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3"
   }
 }

@@ -5,4 +5,5 @@ export const color = {
   // Neutral
   grayishBlue: ' hsl(217, 19%, 38%)',
   darkGrayishBlue: 'hsl(217, 19%, 24%)',
+  darkBlue: 'rgb(32,38,50)',
 };

@@ -13,8 +13,11 @@ const globalStyles = css`
   }
   body {
     font-family: 'Manrope', sans-serif;
-    background-color: ${color.darkGrayishBlue};
+    background-color: ${color.darkBlue};
     min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
