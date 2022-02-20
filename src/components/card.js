@@ -20,20 +20,19 @@ export default function AdviceCard() {
       });
   }, [id]);
   const handleOnclick = () => {
-    setId(Math.floor(Math.random() * 200 + 1));
+    setId(Math.floor(Math.random() * 10));
   };
 
   return (
     <div
       css={css`
         background-color: ${color.darkGrayishBlue};
-        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
-          rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
         border-radius: 8px;
-        max-width: 25rem;
+        width: 28rem;
+        max-width: 28rem;
         margin: 0 1rem;
-        padding: 50px 20px;
+        padding: 50px 0;
         text-align: center;
         line-height: 2;
         font-size: 1.2rem;
@@ -43,7 +42,7 @@ export default function AdviceCard() {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 280px;
+        height: 19rem;
         justify-content: space-between;
       `}
     >
@@ -58,7 +57,14 @@ export default function AdviceCard() {
       >
         advice # {advice.id}
       </h2>
-      <p>{advice.advice}</p>
+      <p
+        css={css`
+          margin: 0.8rem 0;
+          width: 75%;
+        `}
+      >
+        ❝ {advice.advice}❞
+      </p>
       <svg width={295} height={16} xmlns="http://www.w3.org/2000/svg">
         <g fill="none" fillRule="evenodd">
           <path fill="#4F5D74" d="M0 8h122v1H0zm173 0h122v1H173z" />
@@ -77,7 +83,7 @@ export default function AdviceCard() {
           border-radius: 100px;
           display: grid;
           padding: 10px;
-          top: 260px;
+          top: 280px;
           &:hover {
             filter: drop-shadow(0 0 0.5rem ${color.neonGreen});
           }
