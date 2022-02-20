@@ -38,12 +38,12 @@ export default function AdviceCard() {
         font-size: 1.2rem;
         font-weight: 800;
         color: ${color.lightCyan};
-        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 19rem;
         justify-content: space-between;
+        position: relative;
       `}
     >
       <h2
