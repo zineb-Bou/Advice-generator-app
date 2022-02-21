@@ -1,5 +1,5 @@
 # Parcel #
-.cache/
+.cache
 dist
 # Yarn / NPM #
 .DS_*
