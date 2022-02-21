@@ -1,5 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/react';
 import { color } from '../utils/color';
@@ -20,30 +19,30 @@ export default function AdviceCard() {
       });
   }, [id]);
   const handleOnclick = () => {
-    setId(Math.floor(Math.random() * 10));
+    setId(Math.floor(Math.random() * 100));
   };
 
   return (
     <div
       css={css`
         background-color: ${color.darkGrayishBlue};
-        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        box-shadow: 0 0 10px ${color.darkGrayishBlue};
+        color: ${color.lightCyan};
+        box-sizing: border-box;
         border-radius: 8px;
         width: 28rem;
         max-width: 28rem;
+        height: 20rem;
         margin: 0 1rem;
-        padding: 50px 0;
-        text-align: center;
-        line-height: 2;
-        font-size: 1.2rem;
-        font-weight: 800;
-        color: ${color.lightCyan};
+        padding: 40px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 19rem;
         justify-content: space-between;
         position: relative;
+        @media (max-width: 480px) {
+          width: 20rem;
+        }
       `}
     >
       <h2
@@ -61,6 +60,11 @@ export default function AdviceCard() {
         css={css`
           margin: 0.8rem 0;
           width: 75%;
+          line-height: 1.5;
+          font-size: 1.2rem;
+          font-weight: 800;
+          text-align: center;
+          letter-spacing: 1px;
         `}
       >
         ❝ {advice.advice}❞
@@ -83,7 +87,7 @@ export default function AdviceCard() {
           border-radius: 100px;
           display: grid;
           padding: 10px;
-          top: 280px;
+          top: 300px;
           &:hover {
             filter: drop-shadow(0 0 0.5rem ${color.neonGreen});
           }
