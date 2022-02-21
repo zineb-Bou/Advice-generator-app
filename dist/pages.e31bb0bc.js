@@ -34668,9 +34668,9 @@ var App = function App() {
     styles: _global.default
   }), /*#__PURE__*/_react.default.createElement(_react2.Global, {
     styles: _reset.default
-  }), /*#__PURE__*/_react.default.createElement("h1", {
+  }), /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("h1", {
     className: "sr-only"
-  }, "Advice generator"), /*#__PURE__*/_react.default.createElement(_card.default, null));
+  }, "Advice generator"), /*#__PURE__*/_react.default.createElement(_card.default, null)));
 };
 
 (0, _reactDom.render)( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById('root'));
@@ -34702,7 +34702,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60658" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63836" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

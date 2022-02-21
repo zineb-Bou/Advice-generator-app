@@ -8,8 +8,10 @@ const App = () => (
   <>
     <Global styles={globalStyles} />
     <Global styles={resetStyle} />
-    <h1 className="sr-only">Advice generator</h1>
-    <AdviceCard />
+    <main>
+      <h1 className="sr-only">Advice generator</h1>
+      <AdviceCard />
+    </main>
   </>
 );
 render(<App />, document.getElementById('root'));
