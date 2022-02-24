@@ -50,7 +50,7 @@ export default function AdviceCard() {
           color: ${color.neonGreen};
           text-transform: uppercase;
           font-size: 0.8rem;
-          font-weight: 500;
+          font-weight: 700;
           letter-spacing: 4px;
         `}
       >
@@ -61,7 +61,7 @@ export default function AdviceCard() {
           margin: 0.8rem 0;
           width: 75%;
           line-height: 1.5;
-          font-size: 1.2rem;
+          font-size: 1.5rem;
           font-weight: 800;
           text-align: center;
           letter-spacing: 1px;
@@ -88,6 +88,7 @@ export default function AdviceCard() {
           display: grid;
           padding: 10px;
           top: 300px;
+          cursor: pointer;
           &:hover {
             filter: drop-shadow(0 0 0.5rem ${color.neonGreen});
           }
